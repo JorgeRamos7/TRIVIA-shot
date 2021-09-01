@@ -1,0 +1,73 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Yusei Magic', sans-serif;
+}
+
+
+
+body {
+    min-height: 100vh;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Nav-bar Button */
+
+.container-fluid {
+    border: 3px solid #B7E1DD;
+    border-radius: 5px;
+    width: 155px;
+    margin-left: 30px;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: #B7E1DD;
+    translate: 1.2s;
+}
+.navbar-brand:hover {
+    transition-duration: 1.2s;
+    color: #BBB29D;
+    }
+
+/* Text container */
+
+.container {
+    height: 30%;
+    width: 100%;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.principal-title {
+    color: #B7E1DD;
+    margin-bottom: 40px;
+}
+.text-description {
+    color: #B7E1DD;
+    font-size: 21px;
+    margin-top: 30px;
+}
+.development {
+    text-align: center;
+    color: #15110F;
+}
+.development {
+    text-align: center;
+    justify-content: center;
+}
+
+/* Form-Control */
+
+.NQ {
+    color: #B7E1DD;
+}
+.form-select {
+    display: inline-block;
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+			crossorigin="anonymous"/>
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./styles.css" />
+		<title>TRIVIA-SHOT-GAME</title>
+	</head>
+	<body>
+		
+		<section>
+			<div class="container row">
+				<div class="text-description">
+					<h1 class="principal-title"> For Whitexicans<br> ¿Estás listo para jugar Trivia-SHOT!? </h1>
+
+					<h5>
+
+				        Reglas:	<br>
+						1) Selecciona de 1 a 50 preguntas <br>
+						2) Selecciona una categoria <br>
+						3) Selecciona una dificultad (Si vez que estan medio sonsos tus amigos selecciona una dificultad sencilla, sino ponlo perron.) <br>
+						4) Escoge entre verdader/falto u opcion multiple <br>
+						5) Por cada pregunta erronea debes de tomar un shot, no lo olvides<br>
+						6) Cada 30 min revisa que no se hayan encerrado en tu baño o que hayan tirado tu lavabo
+						
+					</h5>
+				</div>
+				
+				<div >
+					<h6 class="text-description"> ¡Buena suerte! y que gane el menos borracho </h6>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div id="container1" style="margin: 30px">
+				<form onsubmit="event.preventDefault(), getQuestions()">
+					<!-- Select number questions -->
+					<label style="margin-top: 20px" for="number" class="NQ"
+						>Numero de preguntas (max - 50)</label
+					>
+					<br>
+					<input
+						style="width: 20%; margin-bottom: 10px"
+						class="form-select"
+						id="numberQ"
+						type="number"
+						value="10"
+						min="1"
+						max="50"
+					/>
+					<!-- Select category -->
+					<select
+						id="select-category"
+						style="width: 20%; margin-bottom: 10px"
+						class="form-select"
+						aria-label="Default select example"
+					>
+						<option selected>Selecciona la categoria</option>
+					</select>
+					<!-- Select difficulty -->
+					<select
+						id="select-difficulty"
+						style="width: 20%; margin-bottom: 10px"
+						class="form-select"
+						aria-label="Default select example"
+					>
+						<option selected>Selecciona lo canijo</option>
+						<option id="easy" value="easy">Easy</option>
+						<option id="medium" value="medium">Medium</option>
+						<option id="hard" value="hard">Hard</option>
+					</select>
+					<!-- select type -->
+					<select
+						id="select-type"
+						style="width: 20%; margin-bottom: 10px"
+						class="form-select"
+						aria-label="Default select example"
+					>
+						<option selected> Seleciona el tipo</option>
+						<option id="true/false" value="boolean">True or False</option>
+						<option id="optionM" value="multiple">Multiple choice</option>
+					</select>
+					<br>
+					<button
+						style="margin: 10px auto"
+						class="btn btn-primary justify-content-center">
+					
+						Generar Preguntitas
+					</button>
+				</form>
+			</div>
+			<div id="containerII">
+				<form id="formII" onsubmit="event.preventDefault(), submitQ()">
+					<!-- Here is the content -->
+				</form>
+			</div>
+			<script src="./app.js" defer type="text/javascript"></script>
+		</section>
+	</body>
+
+
+</html>
+
